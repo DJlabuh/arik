@@ -5,12 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" href="./assets/fonts/Satoshi-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Gambetta-LightItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" href="./assets/fonts/Chillax-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" href="./assets/fonts/Chillax-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1749930051229"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1749930051229">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1750496876981"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1750496876981">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -47,7 +48,27 @@
 				</div>
 			</header>
 			<main class="page page--home">
-				<div class="page__container"></div>
+				<section class="page__hero hero">
+					<div class="hero__container">
+						<div class="hero__picture">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/arik-600.webp" type="image/webp">
+								<img class="hero__image" alt="Image" src="./assets/img/arik.webp">
+							</picture>
+						</div>
+						<div data-fls-blockhead="" class="hero__blockhead blockhead">
+							<h1 class="blockhead__title blockhead__title--size-160">
+								Web Designer
+								<span>& Developer</span>
+							</h1>
+							<div class="blockhead__text blockhead__text--size-24">
+								<p>
+									Premium web design, development, and SEO services to help your business stand out.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
 			<footer data-fls-footer="" class="footer">
 				<div class="footer__container"></div>
