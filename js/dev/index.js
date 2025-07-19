@@ -2229,18 +2229,24 @@ function masonryRun() {
   const isotope2 = document.querySelector("[data-fls-masonry]");
   const isotopeItems = new Isotope(isotope2, {
     itemSelector: "[data-fls-masonry-item]",
+    percentPosition: true,
     masonry: {
-      fitWidth: true,
-      gutter: 20
+      gutter: 32
     }
   });
   function documentActions(e) {
     const targetElement = e.target;
     if (targetElement.closest("[data-fls-masonry-filter-link]")) {
-      const filterItem = targetElement.closest("[data-fls-masonry-filter-link]");
+      const filterItem = targetElement.closest(
+        "[data-fls-masonry-filter-link]"
+      );
       const filterValue = filterItem.dataset.flsMasonryFilterLink;
-      const filterActiveItem = document.querySelector("[data-fls-masonry-filter-link].--active");
-      filterValue === "*" ? isotopeItems.arrange({ filter: `` }) : isotopeItems.arrange({ filter: `[data-fls-masonry-filter="${filterValue}"]` });
+      const filterActiveItem = document.querySelector(
+        "[data-fls-masonry-filter-link].--active"
+      );
+      filterValue === "*" ? isotopeItems.arrange({ filter: `` }) : isotopeItems.arrange({
+        filter: `[data-fls-masonry-filter="${filterValue}"]`
+      });
       filterActiveItem.classList.remove("--active");
       filterItem.classList.add("--active");
       e.preventDefault();
