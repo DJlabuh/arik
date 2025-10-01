@@ -434,19 +434,14 @@ body {
   gap: 0.75rem;
 }
 .button--text::before {
+  aspect-ratio: 1;
   width: 2rem;
-  height: 2rem;
   text-align: center;
   align-content: center;
   border-radius: 50%;
   border: 0.0625rem solid rgba(218, 197, 167, 0.15);
   background-color: rgba(218, 197, 167, 0.05);
   transition: all 0.5s;
-}
-.button--text-big::before {
-  font-size: 0.9375rem;
-  width: 3rem;
-  height: 3rem;
 }
 .button--text-rev {
   flex-direction: row-reverse;
@@ -677,6 +672,12 @@ body {
   .content-footer {
     gap: 1.25rem;
   }
+  .button--text-big::before {
+    width: 2.1875rem;
+  }
+  .button--text-big::before {
+    font-size: 0.8125rem;
+  }
   .lets-talk__container {
     padding-block: 2.5rem;
   }
@@ -733,6 +734,12 @@ body {
   }
   .content-footer {
     gap: clamp( 1.25rem , 0.8355855855875rem  +  2.0720720721vw , 2.6875rem );
+  }
+  .button--text-big::before {
+    width: clamp( 2.1875rem , 1.95326576576875rem  +  1.1711711712vw , 3rem );
+  }
+  .button--text-big::before {
+    font-size: clamp( 0.8125rem , 0.7764639639625rem  +  0.1801801802vw , 0.9375rem );
   }
   .lets-talk__container {
     padding-block: clamp( 2.5rem , 0.3378378378375rem  +  10.8108108108vw , 10rem );
@@ -801,6 +808,12 @@ body {
   }
   .content-footer {
     gap: 2.6875rem;
+  }
+  .button--text-big::before {
+    width: 3rem;
+  }
+  .button--text-big::before {
+    font-size: 0.9375rem;
   }
   .lets-talk__container {
     padding-block: 10rem;
