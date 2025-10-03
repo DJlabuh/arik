@@ -60,6 +60,16 @@
 }
 .item-service__link-image {
   display: block;
+  position: relative;
+}
+.item-service__link-image::after {
+  content: "";
+  background: url("../assets/img/noise.webp") 0 0 repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .item-service__image {
   width: 100%;
