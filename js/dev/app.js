@@ -595,6 +595,9 @@ const marquee = () => {
 };
 marquee();
 export {
+  slideDown as a,
+  dataMediaQueries as d,
   getDigFormat as g,
+  slideUp as s,
   uniqArray as u
 };
