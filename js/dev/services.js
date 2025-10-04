@@ -1,4 +1,5 @@
-import { d as dataMediaQueries, s as slideUp, a as slideDown, g as getDigFormat, u as uniqArray } from "./app.min.js";
+import "./main.min.js";
+import { d as dataMediaQueries, s as slideUp, a as slideDown, g as getDigFormat, u as uniqArray } from "./common.min.js";
 function showMore() {
   const showMoreBlocks = document.querySelectorAll("[data-fls-showmore]");
   let showMoreBlocksRegular;
@@ -156,7 +157,7 @@ class ScrollWatcher {
     };
     this.config = Object.assign(defaultConfig, props);
     this.observer;
-    !document.documentElement.classList.contains("watcher") ? this.scrollWatcherRun() : null;
+    !document.documentElement.hasAttribute("data-fls-watch") ? this.scrollWatcherRun() : null;
   }
   // Оновлюємо конструктор
   scrollWatcherUpdate() {
@@ -164,7 +165,7 @@ class ScrollWatcher {
   }
   // Запускаємо конструктор
   scrollWatcherRun() {
-    document.documentElement.classList.add("watcher");
+    document.documentElement.setAttribute("data-fls-watch", "");
     this.scrollWatcherConstructor(document.querySelectorAll("[data-fls-watcher]"));
   }
   // Конструктор спостерігачів
