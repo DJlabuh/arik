@@ -1,4 +1,5 @@
 import "./main.min.js";
+/* empty css                 */
 import "./common.min.js";
 class DynamicAdapt {
   constructor() {
