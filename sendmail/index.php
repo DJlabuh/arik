@@ -3,24 +3,26 @@
 require 'config.php';
 
 //Від кого лист
-$mail->setFrom('some@gmail.com', 'Лист від ЧФ4'); // Вказати потрібний E-mail
+$mail->setFrom('some@gmail.com', 'Тестовий лист'); // Вказати потрібний E-mail
 //Кому відправити
 $mail->addAddress('djlabuh@gmail.com'); // Вказати потрібний E-mail
 //Тема листа
-$mail->Subject = 'Вітання! Це Чертоги Фрілансера 4';
+$mail->Subject = 'Вітання! Це тестовий лист!';
 
 //Тіло листа
-$body = '<h1>Зустрічайте супер листа!</h1>';
+$body = '<h1>Зустрічайте тестовий лист!</h1>';
 
-if(trim(!empty($_POST['name']))){
-$body.='<p>Name:'.$_POST['name'].'</p>';
-}	
-if(trim(!empty($_POST['email']))){
-$body.='<p>Email:'.$_POST['email'].'</p>';
-}	
-if(trim(!empty($_POST['message']))){
-$body.='<p>Message:'.$_POST['mesage'].'</p>';
-}	
+if (!empty(trim($_POST['name']))) {
+    $body .= '<p>Name: ' . htmlspecialchars($_POST['name']) . '</p>';
+}
+
+if (!empty(trim($_POST['email']))) {
+    $body .= '<p>Email: ' . htmlspecialchars($_POST['email']) . '</p>';
+}
+
+if (!empty(trim($_POST['message']))) {
+    $body .= '<p>Message: ' . htmlspecialchars($_POST['message']) . '</p>';
+}
 
 /*
 	//Прикріпити файл
