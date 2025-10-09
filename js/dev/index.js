@@ -1,4 +1,5 @@
 import "./main.min.js";
+/* empty css          */
 import "./common.min.js";
 function getDefaultExportFromCjs(x) {
   return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, "default") ? x["default"] : x;
