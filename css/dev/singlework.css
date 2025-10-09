@@ -46,6 +46,29 @@
 .info-singlework__value {
   color: #DAC5A7;
 }
+
+.body-singlework__container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: 1.25rem;
+}
+.body-singlework__content {
+  flex: 1 1 28.125rem;
+}
+.body-singlework__items {
+  flex: 1 1 28.125rem;
+  display: grid;
+}
+.item-body-singlework__title:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.item-body-singlework__text {
+  line-height: 1.8;
+}
+.item-body-singlework__text p:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
 @media (max-width: 20em) {
   .page--singlework {
     padding-top: 7.5rem;
@@ -56,8 +79,23 @@
   .singlework__hero {
     margin-bottom: 1.875rem;
   }
+  .singlework__project {
+    margin-bottom: 1.875rem;
+  }
   .hero-singlework__container {
     gap: 1.25rem;
+  }
+  .body-singlework__container {
+    column-gap: 1.25rem;
+  }
+  .body-singlework__items {
+    gap: 0.9375rem;
+  }
+  .item-body-singlework {
+    padding: 1.25rem;
+  }
+  .item-body-singlework__title {
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 20em) and (max-width: 89.375em) {
@@ -70,8 +108,29 @@
   .singlework__hero {
     margin-bottom: clamp( 1.875rem , 1.2623873873875rem  +  3.0630630631vw , 4rem );
   }
+  .singlework__project {
+    margin-bottom: clamp( 1.875rem , 0.10923423423125rem  +  8.8288288288vw , 8rem );
+  }
   .hero-singlework__container {
     gap: clamp( 1.25rem , 0.74549549549375rem  +  2.5225225225vw , 3rem );
+  }
+  .body-singlework__container {
+    column-gap: clamp( 1.25rem , -0.11936936936875rem  +  6.8468468468vw , 6rem );
+  }
+  .body-singlework__items {
+    gap: clamp( 0.9375rem , 0.63119369369375rem  +  1.5315315315vw , 2rem );
+  }
+  .item-body-singlework {
+    padding: clamp( 1.25rem , 0.74549549549375rem  +  2.5225225225vw , 3rem );
+  }
+  .item-body-singlework__title {
+    font-size: clamp( 1.25rem , 1.177927927925rem  +  0.3603603604vw , 1.5rem );
+  }
+}
+@media (width > 62.25em) {
+  .body-singlework__content {
+    position: sticky;
+    top: 9.375rem;
   }
 }
 @media (min-width: 89.375em) {
@@ -84,7 +143,22 @@
   .singlework__hero {
     margin-bottom: 4rem;
   }
+  .singlework__project {
+    margin-bottom: 8rem;
+  }
   .hero-singlework__container {
     gap: 3rem;
+  }
+  .body-singlework__container {
+    column-gap: 6rem;
+  }
+  .body-singlework__items {
+    gap: 2rem;
+  }
+  .item-body-singlework {
+    padding: 3rem;
+  }
+  .item-body-singlework__title {
+    font-size: 1.5rem;
   }
 }
