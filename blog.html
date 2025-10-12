@@ -9,12 +9,12 @@
 		<link rel="preload" href="./assets/fonts/Chillax-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" href="./assets/fonts/Chillax-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<title>Work</title>
-		<script type="module" crossorigin="" src="./js/common.min.js?v=1760299339268"></script>
-		<script type="module" crossorigin="" src="./js/main.min.js?v=1760299339268"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1760299339268">
-		<link rel="stylesheet" crossorigin="" href="./css/work.min.css?v=1760299339268">
-		<link rel="stylesheet" crossorigin="" href="./css/work.min2.css?v=1760299339268">
+		<title>Blog</title>
+		<script type="module" crossorigin="" src="./js/common.min.js?v=1760299339266"></script>
+		<script type="module" crossorigin="" src="./js/main.min.js?v=1760299339266"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1760299339266">
+		<link rel="stylesheet" crossorigin="" href="./css/blog.min.css?v=1760299339266">
+		<link rel="stylesheet" crossorigin="" href="./css/title.min.css?v=1760299339266">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -31,7 +31,7 @@
 										<a href="./services.html" class="menu__link">Services</a>
 									</li>
 									<li class="menu__item">
-										<a href="./work.html" class="menu__link menu__link--active">Work</a>
+										<a href="./work.html" class="menu__link">Work</a>
 									</li>
 									<li class="menu__item">
 										<a href="./about.html" class="menu__link">About</a>
@@ -52,78 +52,45 @@
 					</div>
 				</div>
 			</header>
-			<main class="page page--work">
-				<section class="page__works works-page">
-					<div class="works-page__container">
-						<div data-fls-blockhead="" class="works-page__blockhead blockhead">
-							<h1 class="blockhead__title">Work</h1>
+			<main class="page page--blog blog">
+				<div class="blog__hero hero-blog">
+					<div class="hero-blog__container">
+						<div data-fls-blockhead="" class="hero-blog__blockhead blockhead">
+							<h1 class="blockhead__title">Blog</h1>
 							<div class="blockhead__text">
-								<p>My latest web design projects and see how we can help bring your ideas to life.</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor lorem.
+								</p>
 							</div>
 						</div>
-						<div class="works">
-							<article data-fls-work="" class="item-work">
-								<a href="#" class="item-work__picture">
+					</div>
+				</div>
+				<div class="blog__body body-blog">
+					<div class="body-blog__container">
+						<div class="body-blog__items">
+							<article data-fls-border="" class="body-blog__item item-blog">
+								<a href="#" class="item-blog__link-image">
 									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/works/01-600.webp 1x,./assets/img/works/01-600-1x.webp 1x,./assets/img/works/01-600-2x.webp 2x,./assets/img/works/01-600-3x.webp 3x" type="image/webp">
-										<source media="(max-width: 1200px)" srcset="./assets/img/works/01-1200.webp 1x,./assets/img/works/01-1200-1x.webp 1x,./assets/img/works/01-1200-2x.webp 2x,./assets/img/works/01-1200-3x.webp 3x" type="image/webp">
-										<img class="item-work__image" alt="Image" src="./assets/img/works/01.webp" srcset="./assets/img/works/01.webp 1x,./assets/img/works/01-1x.webp 1x,./assets/img/works/01-2x.webp 2x,./assets/img/works/01-3x.webp 3x">
+										<source media="(max-width: 600px)" srcset="./assets/img/blog/01-600.webp 1x,./assets/img/blog/01-600-1x.webp 1x,./assets/img/blog/01-600-2x.webp 2x,./assets/img/blog/01-600-3x.webp 3x" type="image/webp">
+										<img class="item-blog__image" alt="Image" src="./assets/img/blog/01.webp" srcset="./assets/img/blog/01.webp 1x,./assets/img/blog/01-1x.webp 1x,./assets/img/blog/01-2x.webp 2x,./assets/img/blog/01-3x.webp 3x">
 									</picture>
 								</a>
-								<div class="item-work__body">
-									<h5 class="item-work__name">
-										<a href="#" class="item-work__link-name">Space</a>
-									</h5>
-									<a href="NaN" class="item-work__category">Webdesign</a>
+								<div class="item-blog__body">
+									<time class="item-blog__date" datetime="2023-08-23">23rd Aug 2023</time>
+									<h4 data-fls-title="" class="item-blog__title">
+										<a href="#" class="item-blog__link-title">How to Build a Stunning Website with Framer</a>
+									</h4>
+									<div class="item-blog__text">
+										<p>
+											Learn how to create an impressive website using Framer with our step-by-step guide.
+										</p>
+									</div>
 								</div>
-							</article>
-							<article data-fls-work="" class="item-work">
-								<a href="#" class="item-work__picture">
-									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/works/02-600.webp 1x,./assets/img/works/02-600-1x.webp 1x,./assets/img/works/02-600-2x.webp 2x,./assets/img/works/02-600-3x.webp 3x" type="image/webp">
-										<img class="item-work__image" alt="Image" src="./assets/img/works/02.webp" srcset="./assets/img/works/02.webp 1x,./assets/img/works/02-1x.webp 1x,./assets/img/works/02-2x.webp 2x,./assets/img/works/02-3x.webp 3x">
-									</picture>
-								</a>
-								<div class="item-work__body">
-									<h5 class="item-work__name">
-										<a href="#" class="item-work__link-name">Nova</a>
-									</h5>
-									<a href="NaN" class="item-work__category">Webdesign</a>
-								</div>
-							</article>
-							<article data-fls-work="" class="item-work">
-								<a href="#" class="item-work__picture">
-									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/works/03-600.webp 1x,./assets/img/works/03-600-1x.webp 1x,./assets/img/works/03-600-2x.webp 2x,./assets/img/works/03-600-3x.webp 3x" type="image/webp">
-										<source media="(max-width: 1200px)" srcset="./assets/img/works/03-1200.webp 1x,./assets/img/works/03-1200-1x.webp 1x,./assets/img/works/03-1200-2x.webp 2x,./assets/img/works/03-1200-3x.webp 3x" type="image/webp">
-										<img class="item-work__image" alt="Image" src="./assets/img/works/03.webp" srcset="./assets/img/works/03.webp 1x,./assets/img/works/03-1x.webp 1x,./assets/img/works/03-2x.webp 2x,./assets/img/works/03-3x.webp 3x">
-									</picture>
-								</a>
-								<div class="item-work__body">
-									<h5 class="item-work__name">
-										<a href="#" class="item-work__link-name">Sonic</a>
-									</h5>
-									<a href="NaN" class="item-work__category">Webdesign</a>
-								</div>
-							</article>
-							<article data-fls-work="" class="item-work">
-								<a href="#" class="item-work__picture">
-									<picture>
-										<source media="(max-width: 600px)" srcset="./assets/img/works/04-600.webp 1x,./assets/img/works/04-600-1x.webp 1x,./assets/img/works/04-600-2x.webp 2x,./assets/img/works/04-600-3x.webp 3x" type="image/webp">
-										<source media="(max-width: 1200px)" srcset="./assets/img/works/04-1200.webp 1x,./assets/img/works/04-1200-1x.webp 1x,./assets/img/works/04-1200-2x.webp 2x,./assets/img/works/04-1200-3x.webp 3x" type="image/webp">
-										<img class="item-work__image" alt="Image" src="./assets/img/works/04.webp" srcset="./assets/img/works/04.webp 1x,./assets/img/works/04-1x.webp 1x,./assets/img/works/04-2x.webp 2x,./assets/img/works/04-3x.webp 3x">
-									</picture>
-								</a>
-								<div class="item-work__body">
-									<h5 class="item-work__name">
-										<a href="#" class="item-work__link-name">Solar</a>
-									</h5>
-									<a href="NaN" class="item-work__category">Webdesign</a>
-								</div>
+								<a data-fls-border="" href="#" class="item-blog__category">WEbdesign</a>
 							</article>
 						</div>
 					</div>
-				</section>
+				</div>
 			</main>
 			<aside data-fls-letstalk="" class="lets-talk">
 				<div data-fls-border="" data-fls-marquee="" data-fls-marquee-speed="100" class="lets-talk__line line-talk">
